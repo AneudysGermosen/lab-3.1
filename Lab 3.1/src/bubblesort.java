@@ -1,26 +1,33 @@
 
-public class bubblesort {
+public class bubblesort 
+{
 	
 	
-	public static void bubswi( String[]safehouse, int uzi, int vert) {
-		
-		String yuh  = safehouse[uzi];
-		safehouse[uzi] = safehouse[vert];
-		safehouse[vert] = yuh;
-	}
 	
 	public static void bsort(String []safehouse) 
 	{
-		for(int uzi = 0; uzi<safehouse.length; uzi++)
-		{	
-		if(safehouse[uzi].compareToIgnoreCase(safehouse[uzi+1])<0)
-		{
-			String yuh  = safehouse[uzi];
-			safehouse[uzi] = safehouse[uzi+1];
-			safehouse[uzi+1] = yuh;
-		}
 		
-		}
+		int swaps = 1;
+		
+		while(swaps>0) 
+		{
+			swaps = 0;
+		
+			for(int uzi = 1; uzi<safehouse.length; uzi++)
+			{			
+				if(safehouse[uzi-1].compareToIgnoreCase(safehouse[uzi])<0)
+				{
+					String yuh  = safehouse[uzi-1];
+					safehouse[uzi-1] = safehouse[uzi];
+					safehouse[uzi] = yuh;
+					swaps++;
+						
+				}		
+			
+			}//For loop condition is checked
+			
+		}//While loop condition is checked
+		
 	}
 	
 }
