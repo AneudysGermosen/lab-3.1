@@ -30,5 +30,46 @@ public class bubblesort
 		
 	}
 	
+
+
+	public static void Ssort(int[] magnolia)
+	{
+		for (int carti = 0; carti< magnolia.length-1; carti++)
+		{
+			int dx = carti;
+			for(int wat = carti +1; wat< magnolia.length; wat++)
+			{
+				if( magnolia[wat] < magnolia[dx])
+				{
+					dx = wat;
+				}
+			}
+			int lilnumber = magnolia[dx];
+			magnolia[dx] = magnolia[carti];
+			magnolia[carti] = lilnumber;
+		}
+	}
+
+
+
+	public static void insertionSort(int[] list1)
+	{
+		for (int i = 1; i < list1.length; i++)
+		{
+			int j = i;
+			while (j > 0)
+			{
+				if (list1[j] < list1[j - 1])
+				{
+					swap it swap it like its stolen yuh!;
+					j--;
+				}
+				else
+				{
+					break;
+				}
+			}
+		}
+	}
 }
 
