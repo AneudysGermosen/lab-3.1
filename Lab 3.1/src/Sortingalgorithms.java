@@ -1,5 +1,7 @@
 
-public class bubblesort 
+
+// Aneudys Germosen
+public class Sortingalgorithms 
 {
 	
 	
@@ -15,7 +17,7 @@ public class bubblesort
 		
 			for(int uzi = 1; uzi<safehouse.length; uzi++)
 			{			
-				if(safehouse[uzi-1].compareToIgnoreCase(safehouse[uzi])<0)
+				if(safehouse[uzi-1].compareToIgnoreCase(safehouse[uzi])>0)
 				{
 					String yuh  = safehouse[uzi-1];
 					safehouse[uzi-1] = safehouse[uzi];
@@ -32,9 +34,9 @@ public class bubblesort
 	
 
 
-	public static void Ssort(int[] magnolia)
+	public static void Ssort(double[] magnolia)
 	{
-		for (int carti = 0; carti< magnolia.length-1; carti++)
+		for (int carti = 0; carti< magnolia.length-1; carti++) // this for loop 
 		{
 			int dx = carti;
 			for(int wat = carti +1; wat< magnolia.length; wat++)
@@ -44,7 +46,7 @@ public class bubblesort
 					dx = wat;
 				}
 			}
-			int lilnumber = magnolia[dx];
+			double lilnumber = magnolia[dx];
 			magnolia[dx] = magnolia[carti];
 			magnolia[carti] = lilnumber;
 		}
@@ -52,7 +54,7 @@ public class bubblesort
 
 
 
-	public static void insertionSort(int[] list1)
+	public static void ISort(int[] list1)
 	{
 		for (int i = 1; i < list1.length; i++)
 		{
@@ -61,7 +63,9 @@ public class bubblesort
 			{
 				if (list1[j] < list1[j - 1])
 				{
-					swap it swap it like its stolen yuh!;
+					int num = list1[i];
+					list1[i] = list1[j];
+					list1[j] = num;
 					j--;
 				}
 				else
