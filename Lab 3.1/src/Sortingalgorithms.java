@@ -1,6 +1,8 @@
 
 
 // Aneudys Germosen
+// 2/1/2018
+// java period 2
 public class Sortingalgorithms 
 {
 	
@@ -36,11 +38,11 @@ public class Sortingalgorithms
 
 	public static void Ssort(double[] magnolia)
 	{
-		for (int carti = 0; carti< magnolia.length-1; carti++) // this for loop 
-		{
+		for (int carti = 0; carti< magnolia.length-1; carti++) // this for loop tells us what index we are trying to fill out, smallest number at 0,
+		{                                                      // then 2nd smallest number at 1 ect
 			int dx = carti;
-			for(int wat = carti +1; wat< magnolia.length; wat++)
-			{
+			for(int wat = carti +1; wat< magnolia.length; wat++) // this for loop is for finding the smallest number in the array that
+			{													// we can put into our current index or carti
 				if( magnolia[wat] < magnolia[dx])
 				{
 					dx = wat;
